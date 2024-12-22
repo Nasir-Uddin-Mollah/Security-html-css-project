@@ -6,6 +6,7 @@
 .banner {
     position: relative;
     background-image: url(images/background.jpeg);
+    height: 100vh;
 }
 
 .banner::before {
@@ -16,7 +17,11 @@
     left: 0;
     width: 100%;
     height: 100%;
+
     z-index: 1;
+    display: grid;
+    flex-direction: column;
+
 }
 
 .row,
@@ -26,21 +31,20 @@
 }
 
 .row {
+    width: 100%;
+    height: 160px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: absolute;
     align-items: center;
-    padding-left: 70px;
-    padding-right: 140px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    gap: 500px;
+    gap: 290px;
     font-weight: 900;
     font-size: 18.6px;
 
+    text-align: center;
+
     .logo {
         padding-top: 20px;
-
     }
 
     .ul {
@@ -71,9 +75,9 @@
 
     .image {
         img {
-            padding-top: 130px;
-            height: 480px;
-            width: 300px;
+            height: 84.9vh;
+            width: 27vw;
+            padding-top: 90px;
 
         }
     }
@@ -298,7 +302,6 @@ footer {
 
     .box-2 {
         width: 214px;
-        /* border: 2px solid lightblue; */
         height: 170px;
         display: flex;
         flex-direction: column;
@@ -335,8 +338,6 @@ footer {
         }
 
         .img1 {
-            /* border: 1px solid white; */
-            /* padding-left: 50px; */
             width: 50%;
             height: 25px;
         }
@@ -347,8 +348,6 @@ footer {
             display: flex;
             list-style-type: disc;
             text-align: center;
-
-
         }
     }
 }
